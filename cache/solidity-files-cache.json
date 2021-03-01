@@ -1,0 +1,1407 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-core\\YetiSwapERC20.sol": {
+      "lastModificationDate": 1613055496563,
+      "contentHash": "7212fb7e532477ae9e68e2304bed2a7d",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-core/YetiSwapERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IYetiSwapERC20.sol",
+        "./libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "YetiSwapERC20"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-core\\libraries\\SafeMath.sol": {
+      "lastModificationDate": 1613055496586,
+      "contentHash": "a65356c329efeffba75210664f5df3cd",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-core/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-core\\YetiSwapPair.sol": {
+      "lastModificationDate": 1613055496565,
+      "contentHash": "2ec50bec463f0b69b60d8fdee9bc7574",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-core/YetiSwapPair.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IYetiSwapPair.sol",
+        "./YetiSwapERC20.sol",
+        "./libraries/Math.sol",
+        "./libraries/UQ112x112.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IYetiSwapFactory.sol",
+        "./interfaces/IYetiSwapCallee.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "YetiSwapPair"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-core\\libraries\\Math.sol": {
+      "lastModificationDate": 1613055496584,
+      "contentHash": "bee6c1959728d5d42c14151076cebd83",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-core/libraries/Math.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-core\\libraries\\UQ112x112.sol": {
+      "lastModificationDate": 1613055496587,
+      "contentHash": "2a703244e9f645c6fb297a983ce7c9c4",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-core/libraries/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-core\\YetiSwapFactory.sol": {
+      "lastModificationDate": 1613055496564,
+      "contentHash": "fd059dc8e7a71d59b8e62bdaf5139336",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-core/YetiSwapFactory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IYetiSwapFactory.sol",
+        "./YetiSwapPair.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "YetiSwapFactory"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\helpers\\Factory.sol": {
+      "lastModificationDate": 1613304529137,
+      "contentHash": "3876f66ac30952261f7987a9cb6d3ad3",
+      "sourceName": "contracts/helpers/Factory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@yetiswap/exchange-contracts/contracts/yetiswap-core/YetiSwapFactory.sol",
+        "@yetiswap/exchange-contracts/contracts/yetiswap-core/YetiSwapPair.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.16"
+      ],
+      "artifacts": [
+        "YetFactory"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\helpers\\WAVAX.sol": {
+      "lastModificationDate": 1613304529160,
+      "contentHash": "cf209cf0b7c311d13987d16533e3513d",
+      "sourceName": "contracts/helpers/WAVAX.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.6"
+      ],
+      "artifacts": [
+        "WAVAX"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\SafeMath.sol": {
+      "lastModificationDate": 1613304529166,
+      "contentHash": "3fcc1574e16627508a9b36a6675105ab",
+      "sourceName": "contracts/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.16"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\YTS.sol": {
+      "lastModificationDate": 1613728800550,
+      "contentHash": "56905a36ed97f987d09f075654d04091",
+      "sourceName": "contracts/YTS.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.16"
+      ],
+      "artifacts": [
+        "YTS"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-periphery\\libraries\\YetiSwapLibrary.sol": {
+      "lastModificationDate": 1613055496602,
+      "contentHash": "eec1d629bc047a0a44cc7b5da76d4f5b",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-periphery/libraries/YetiSwapLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../yetiswap-core/interfaces/IYetiSwapFactory.sol",
+        "../../yetiswap-core/interfaces/IYetiSwapPair.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "YetiSwapLibrary"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-periphery\\libraries\\SafeMath.sol": {
+      "lastModificationDate": 1613055496601,
+      "contentHash": "9f77127a0e2c55c2058453327e84bde3",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-periphery/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-periphery\\YetiSwapRouter.sol": {
+      "lastModificationDate": 1613055496568,
+      "contentHash": "a82971679b589799cad7a90802a96c9c",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-periphery/YetiSwapRouter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../yetiswap-core/interfaces/IYetiSwapFactory.sol",
+        "../yetiswap-lib/libraries/TransferHelper.sol",
+        "./interfaces/IYetiSwapRouter.sol",
+        "./libraries/YetiSwapLibrary.sol",
+        "./libraries/SafeMath.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWAVAX.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "YetiSwapRouter"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\helpers\\Pair.sol": {
+      "lastModificationDate": 1613304529151,
+      "contentHash": "4c35b5f1da57a91b044708fbc98ac224",
+      "sourceName": "contracts/helpers/Pair.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@yetiswap/exchange-contracts/contracts/yetiswap-periphery/YetiSwapRouter.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.6"
+      ],
+      "artifacts": [
+        "Pair"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\MerkleAirdrop.sol": {
+      "lastModificationDate": 1614101416510,
+      "contentHash": "24603cfbbd136e2375e64ced16990571",
+      "sourceName": "contracts/MerkleAirdrop.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.11"
+      ],
+      "artifacts": [
+        "IERC20",
+        "IMerkleAirdrop",
+        "MerkleAirdrop",
+        "MerkleProof"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\AirdropTreasury.sol": {
+      "lastModificationDate": 1613923643112,
+      "contentHash": "91f2a5ff9930b5d208887675189e00b5",
+      "sourceName": "contracts/AirdropTreasury.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "AirdropTreasury"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1613055795083,
+      "contentHash": "6748815a5b45c4aeeda56819f41190e0",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\SafeERC20.sol": {
+      "lastModificationDate": 1613055795093,
+      "contentHash": "33e22842646d746e5c4124c2fdc051aa",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1613055795026,
+      "contentHash": "e0a41531d159d3a32f84b7a3ecf9fabb",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1613055794881,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@openzeppelin\\contracts\\math\\SafeMath.sol": {
+      "lastModificationDate": 1613055795095,
+      "contentHash": "e03e12206057e809eb76c5f681170c32",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1613055794864,
+      "contentHash": "7aa46886ff5abe7515496208a5e2ce5a",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\TreasuryVester.sol": {
+      "lastModificationDate": 1613832478135,
+      "contentHash": "a27ae49da16cfce400ac0a5a48029b0c",
+      "sourceName": "contracts/TreasuryVester.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "TreasuryVester"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@openzeppelin\\contracts\\utils\\ReentrancyGuard.sol": {
+      "lastModificationDate": 1613055795089,
+      "contentHash": "1c60f58cee45c61469e1aea31e4dd879",
+      "sourceName": "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\StakingRewards.sol": {
+      "lastModificationDate": 1613304529168,
+      "contentHash": "e9d8b2ddccbd9625bf175d85d452859e",
+      "sourceName": "contracts/StakingRewards.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/math/Math.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "@yetiswap/exchange-contracts/contracts/yetiswap-core/interfaces/IYetiSwapERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "StakingRewards"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@openzeppelin\\contracts\\math\\Math.sol": {
+      "lastModificationDate": 1613055795079,
+      "contentHash": "e5c844515b04deabacef7eb872abc384",
+      "sourceName": "@openzeppelin/contracts/math/Math.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\LiquidityPoolManager.sol": {
+      "lastModificationDate": 1613832446690,
+      "contentHash": "bb7ff05b4f537f6f23614bdf9ea906e0",
+      "sourceName": "contracts/LiquidityPoolManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/EnumerableSet.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "./StakingRewards.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "ITreasuryVester",
+        "IYTS",
+        "IYetiSwapPair",
+        "LiquidityPoolManager"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@openzeppelin\\contracts\\utils\\EnumerableSet.sol": {
+      "lastModificationDate": 1613055794889,
+      "contentHash": "db7b1afdb2c204e1e52100b79f0c847e",
+      "sourceName": "@openzeppelin/contracts/utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\DevFeeVester.sol": {
+      "lastModificationDate": 1613565116378,
+      "contentHash": "dbb638f4cbf170ea15cf7cf54c15d7e5",
+      "sourceName": "contracts/DevFeeVester.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "DevFeeVester"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-core\\interfaces\\IYetiSwapERC20.sol": {
+      "lastModificationDate": 1613055496581,
+      "contentHash": "4fa52b7b009f43a9c57ebe2d91aef444",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-core/interfaces/IYetiSwapERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IYetiSwapERC20"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-core\\interfaces\\IYetiSwapCallee.sol": {
+      "lastModificationDate": 1613055496579,
+      "contentHash": "74614e9b6e9c9a0d79a0889d4a434112",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-core/interfaces/IYetiSwapCallee.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IYetiSwapCallee"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-core\\interfaces\\IYetiSwapFactory.sol": {
+      "lastModificationDate": 1613055496582,
+      "contentHash": "30e2652068c44530f9c2a6a40e7bea53",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-core/interfaces/IYetiSwapFactory.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IYetiSwapFactory"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-periphery\\interfaces\\IWAVAX.sol": {
+      "lastModificationDate": 1613055496599,
+      "contentHash": "add92d63f6e580c7318346eb43d98b5d",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-periphery/interfaces/IWAVAX.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IWAVAX"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-periphery\\interfaces\\IERC20.sol": {
+      "lastModificationDate": 1613055496597,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-periphery/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-periphery\\interfaces\\IYetiSwapRouter.sol": {
+      "lastModificationDate": 1613055496600,
+      "contentHash": "ba8e1dbbbd7c77d0f1eb6ba23517965f",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-periphery/interfaces/IYetiSwapRouter.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IYetiSwapRouter"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-lib\\libraries\\TransferHelper.sol": {
+      "lastModificationDate": 1613055496596,
+      "contentHash": "0f90f976ad8350b002e7c21344cb9b88",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-lib/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-core\\interfaces\\IYetiSwapPair.sol": {
+      "lastModificationDate": 1613055496583,
+      "contentHash": "ad5d7ed514ca4bc8b83ccbf527eae4eb",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-core/interfaces/IYetiSwapPair.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IYetiSwapPair"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\node_modules\\@yetiswap\\exchange-contracts\\contracts\\yetiswap-core\\interfaces\\IERC20.sol": {
+      "lastModificationDate": 1613055496578,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "@yetiswap/exchange-contracts/contracts/yetiswap-core/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "D:\\YetiSwap\\governance\\contracts\\interfaces\\IYetiSwapERC20.sol": {
+      "lastModificationDate": 1613304529162,
+      "contentHash": "9ad8f8dce98e5c753db6d66b7025def7",
+      "sourceName": "contracts/interfaces/IYetiSwapERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IYetiSwapERC20"
+      ]
+    }
+  }
+}
