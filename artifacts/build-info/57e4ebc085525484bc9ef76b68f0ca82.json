@@ -11202,6 +11202,15 @@
                             }
                           },
                           {
+                            "bytecode": {
+                              "declaration": 486,
+                              "isOffset": false,
+                              "isSlot": false,
+                              "src": "1228:8:1",
+                              "valueSize": 1
+                            }
+                          },
+                          {
                             "pair": {
                               "declaration": 439,
                               "isOffset": false,
@@ -11216,15 +11225,6 @@
                               "isOffset": false,
                               "isSlot": false,
                               "src": "1239:4:1",
-                              "valueSize": 1
-                            }
-                          },
-                          {
-                            "bytecode": {
-                              "declaration": 486,
-                              "isOffset": false,
-                              "isSlot": false,
-                              "src": "1228:8:1",
                               "valueSize": 1
                             }
                           }

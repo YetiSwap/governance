@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: MIT
 
+
+
 pragma solidity ^0.7.6;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -349,6 +351,13 @@ contract LiquidityPoolManager is Ownable, ReentrancyGuard {
         require(unallocatedYts > 0, 'LiquidityPoolManager::vestAllocation: No YTS to claim. Try again tomorrow.');
 
         // Check if we've received extra tokens or didn't receive enough
+        uint actualBalance = IYTS(yts).balanceOf(address(this));
+        require(actualBalance >= unallocatedYts, "LiquidityPoolManager::vestAllocation: Insufficient YTS transferred");
+        unallocatedYts = actualBalance;
+    }
+
+    
+    function manualVestAllocation() public {
         uint actualBalance = IYTS(yts).balanceOf(address(this));
         require(actualBalance >= unallocatedYts, "LiquidityPoolManager::vestAllocation: Insufficient YTS transferred");
         unallocatedYts = actualBalance;
