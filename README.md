@@ -13,7 +13,11 @@ LiqPoolManager(OLD-HAVE PARAMETER ERROR) address: [0x082B245864E02B78c4cf16aFb8E
 
 Airdrop address: [0x171356c0Dc284DF6BB9e1daD8161B41aF97F9116](https://cchain.explorer.avax.network/address/0x171356c0Dc284DF6BB9e1daD8161B41aF97F9116)
 
-LiqPoolManager(New) address: [0xb993074AC003962b2cA29bB4Fd9680899f35A7Bb](https://cchain.explorer.avax.network/address/0xb993074AC003962b2cA29bB4Fd9680899f35A7Bb)
+LiqPoolManager(OUT OF DATE) address: [0xb993074AC003962b2cA29bB4Fd9680899f35A7Bb](https://cchain.explorer.avax.network/address/0xb993074AC003962b2cA29bB4Fd9680899f35A7Bb)
+
+YTSNewLiqPoolManager address: [0x8D1334c3c3F9ba54Ab6d03a3941FB16aB0258180](https://cchain.explorer.avax.network/address/0x8D1334c3c3F9ba54Ab6d03a3941FB16aB0258180)
+
+
 
 Forked from 
 [https://github.com/compound-finance/compound-protocol/tree/v2.8.1](https://github.com/compound-finance/compound-protocol/tree/v2.8.1)
