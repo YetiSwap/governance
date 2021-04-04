@@ -22,9 +22,10 @@ contract StakingRewards is ReentrancyGuard, Ownable {
     IERC20 public stakingToken;
     uint256 public periodFinish = 0;
     uint256 public rewardRate = 0;
-    uint256 public rewardsDuration = 30 days;
+    uint256 public rewardsDuration = 5 days;
     uint256 public lastUpdateTime;
     uint256 public rewardPerTokenStored;
+    address public liqPoolManager;
 
     mapping(address => uint256) public userRewardPerTokenPaid;
     mapping(address => uint256) public rewards;
@@ -36,10 +37,12 @@ contract StakingRewards is ReentrancyGuard, Ownable {
 
     constructor(
         address _rewardsToken,
-        address _stakingToken
+        address _stakingToken,
+        address _liqPoolManager
     ) public {
         rewardsToken = IERC20(_rewardsToken);
         stakingToken = IERC20(_stakingToken);
+        liqPoolManager = _liqPoolManager;
     }
 
     /* ========== VIEWS ========== */
@@ -121,7 +124,9 @@ contract StakingRewards is ReentrancyGuard, Ownable {
     /* ========== RESTRICTED FUNCTIONS ========== */
 
     // Always needs to update the balance of the contract when calling this method
-    function notifyRewardAmount(uint256 reward) external onlyOwner updateReward(address(0)) {
+    function notifyRewardAmount(uint256 reward) external updateReward(address(0)) {
+        require(msg.sender == owner() || msg.sender == liqPoolManager, "Liqpoll Manager or Owner can call this.");
+
         if (block.timestamp >= periodFinish) {
             rewardRate = reward.div(rewardsDuration);
         } else {
@@ -156,6 +161,14 @@ contract StakingRewards is ReentrancyGuard, Ownable {
         );
         rewardsDuration = _rewardsDuration;
         emit RewardsDurationUpdated(rewardsDuration);
+    }
+    
+    function setLiqPoolManager (address _liqPoolManager) external onlyOwner {
+        require(
+            block.timestamp > periodFinish,
+            "Previous rewards period must be complete before changing the liqPoolManager for the new period"
+        );
+        liqPoolManager  = _liqPoolManager;
     }
 
     /* ========== MODIFIERS ========== */
